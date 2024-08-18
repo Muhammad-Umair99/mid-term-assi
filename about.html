@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0c293e;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the content horizontally */
+            justify-content: center; /* Center the content vertically */
+            min-height: 100vh; /* Full viewport height */
+            text-align: center; /* Center align text */
+            overflow: hidden; /* Hide overflow to remove scrollbars */
+            padding: 0 20px; /* Add some horizontal padding */
+            position: relative; /* Set up relative positioning for the button */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            flex: 1; /* Allow content to take up remaining space */
+            align-items: center; /* Center content horizontally */
+        }
+
+        .text {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .text h1 {
+            margin-right: 15px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .text h1.active {
+            color: #00abf0;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #00abf0;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+        }
+
+        .inf {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .inf h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .inf p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Button Styles */
+        .button {
+            position: absolute; /* Position the button absolutely */
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #00abf0;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0288d1;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="text">
+            <h1>About</h1>
+            <h1 class="active">Me</h1>
+        </div>
+        <div class="img">
+            <img src="images/images.jpeg" alt="Shoe Image">
+        </div>
+        <div class="inf">
+            <h1>Fronted Developer</h1>  
+            <p>My name is <span style="color: #00abf0;"><b>Muhammad Umair</b></span>, I am a web developer specializing in creating dynamic and responsive websites. With a passion for clean code and modern design, I strive to build user-friendly and innovative web solutions.</p>
+
+        </div>
+    </div>
+    <a href="#" class="button">Click Me</a>
+</body>
+
+</html>
